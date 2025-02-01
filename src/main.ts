@@ -30,6 +30,6 @@ async function bootstrap() {
     credentials: true, // Allow credentials (cookies, auth headers)
   });
 
-  await app.listen(9000); // Ensure this matches your backend's port
+  await app.listen(process.env.PORT ?? 3000); // Ensure this matches backend's port
 }
 bootstrap();
